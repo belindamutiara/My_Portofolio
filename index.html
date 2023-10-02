@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Belinda Mutiara</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Belinda Mutiara</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Belinda Mutiara profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Belinda Mutiara</h1>
+        <p class="section__text__p2">Data Science Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+
+          <button
+          class="btn btn-color-1"
+          onclick="window.open('./assets/portofolio.pdf')"
+          >
+          Download Portofolio
+         </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/belinda-mutiara/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/belindamutiara/Portofolio'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Data Science - BINUS University (2021 - present)
+                <br />
+                GPA: 3.97 out of 4
+              </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Organization</h3>
+              <p> HIMTI - Staff Responsi (2022 - present) 
+                <br />Data Science Club - Coordinator of Video Edit (2022 - present) </p>
+            </div>
+
+
+
+          </div>
+          <div class="text-container">
+            <p>
+              A passionate student who is full of enthusiasm, willing to work under pressure, adaptive, and
+always responsible for any tasks. I am also a diligent student who loves to learn something new
+and am excited to seek for new experience!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>My SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Sheet</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Computer Science</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C </h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/AseanDSE/Cover.png"
+                alt="ASEAN DSE 2022: Reduce Carbon Footprint"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ASEAN DSE 2022: Reduce Carbon Footprint</h2>
+            <div class="btn-container">
+
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_1-1.pdf', '_blank')"
+            >
+              View
+            </button>
+            
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/belindamutiara/Portofolio/blob/main/ASEAN%20DSE/Indonesia_Datafluent.pdf'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/AseanSales/Cover.png"
+                alt="ASEAN Sales dashboard"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ASEAN Sales dashboard</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_2-2.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://public.tableau.com/app/profile/belinda.mutiara/viz/ASEANSales/ASEANProductSalesStory?publish=yes'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/WorldCovid19/Cover.png"
+                alt="World COVID-19 Cases: America Dashboard"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">World COVID-19 Cases: America Dashboard</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_3-3.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://public.tableau.com/app/profile/belinda.mutiara/viz/WorldCovid19Cases_16571012010330/WorldCovid-19CasesAmerica'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project 4 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Bank Churn/Cover.png"
+                alt="Prediting Customer Churn"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Prediting Customer Churn</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_4-4.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/belindamutiara/Portofolio/tree/main/Bank%20Customer%20Churn%20Prediction'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/InsuranceANN/cover.png"
+                alt="Insurance Classification Using Artificial Neural Network"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Insurance Classification Using Artificial Neural Network</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_5-5.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/belindamutiara/Portofolio/tree/main/Insurance%20Claim%20Classification%20Using%20ANN'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/BatikClassification/Cover.png"
+                alt="Batik Classification Using Convolutional Neural Network"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Batik Classification Using Convolutional Neural Network</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_6-6.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/drive/folders/1CpeSGa66rZ089fCPB3z2o3mJEPxbfevf?usp=sharing'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Market Clustering/Cover.png"
+                alt="Market Clustering"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Market Clustering</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_7-7.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://colab.research.google.com/drive/1h5GY8JmXqcCyjvTaLoX0ud8y5YH1NEdM?usp=sharing'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Project 8 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/UNBigDataHackaton/Cover.png"
+                alt="UN Big Data Hackaton: Peace is the Key"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">UN Big Data Hackaton: Peace is the Key</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_8-8.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/belindamutiara/Portofolio/tree/main/UN%20Big%20Data%20Hackaton'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 9 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Satria Data/Cover.png"
+                alt="Satria Data 2023"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Satria Data 2023</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_9-9.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/13BSCl7BlUK4LHaANZJ1uVih23S_BsRGn/view'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 10 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/google certification/cover.png"
+                alt="Cyclistic Bike Google Professional Certification"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cyclistic Bike Google Professional Certification</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_10-10.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/belindamutiara/Portofolio/tree/main/Google%20Certification'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Project 11 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Stroke Prediction/Cover.png"
+                alt="Stroke Prediction"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Stroke Prediction using LogReg and Decision Tree</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_11-11.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rpubs.com/belindamutiara/929798'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 12 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Titanic/Cover.png"
+                alt="EDA on Titanic"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Explanatory Data Analysis on Titanic</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_12-12.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/belindamutiara/Portofolio/tree/main/EDA%20on%20Titanic'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project 13 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Database/Cover.png"
+                alt="Online Food Purchasing Database"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Online Food Purchasing Database</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_13-13.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1M1Tk8Bgq1c3UbNoa1gcmy58mgqdzhLUM/view'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project 14 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Graduate Admission/cover.png"
+                alt="Graduate Admission Prediction"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Graduate Admission Prediction</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_14-14.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/belindamutiara/Portofolio/tree/main/Graduate%20Prediction'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 15 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Research Paper/Cover.png"
+                alt="Reserach Paper"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Student Engagement: Good Practice Enourages Student-Faculty Contact</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_15-15.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1T7xUWmyBrnN2Raj-zssEOK8MdncESLcO/view'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 16 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/FlixNation/Cover.png"
+                alt="Flix Nation"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Flix Nation</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_16-16.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/prPublication LinkSUyvr9WuIioewjUD4/HCI-AOL?page-id=0%3A1&type=design&node-id=194-166&viewport=732%2C487%2C0.09&scaling=scale-down&starting-point-node-id=194%3A166'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 17 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/CALM/Cover.png"
+                alt="CALM"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CALM</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_1718-1718.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/proto/qHotvwcihEVdbixUpLVGIR/UTS-HCI-BELINDA-MUTIARA-2540119596?page-id=0%3A1&type=design&node-id=23-799&viewport=537%2C774%2C0.09&scaling=scale-down&starting-point-node-id=23%3A799'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+
+          <!-- Project 18 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/SpaceTD/Cover.png"
+                alt="SpaceTD"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SpaceTD</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_19-19.pdf', '_blank')"
+            >
+              View
+            </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/file/YMZ0eejdYURMLgbqnCatim/HCI-LAB-Belinda-Mutiara?type=design&node-id=0%3A1&mode=design&t=5TDCHSxOb2RMMrt8-1'"
+              >
+                Publication Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 19 -->
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/DSC/Cover.png"
+                alt="Data Science Club Content"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Science Club Content</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_20-20.pdf', '_blank')"
+            >
+              View
+            </button>
+              
+            </div>
+          </div>
+
+          <!-- Project 20 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/BNMC/Cover.png"
+                alt="BNMC 22nd Anniversary"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">The Light of Gratitude Unlocks New Strength</h2>
+            <div class="btn-container">
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/Pdf/BelindaMutiara_Portofolio_21-21.pdf', '_blank')"
+            >
+              View
+            </button>
+            </div>
+          </div>
+          
+          <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+
+    
+        </div>
+        
+      </div>
+
+    </section>
+    
+    
+
+
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">belinda.mutiara@binus.ac.id</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/belinda-mutiara">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Belinda Mutiara. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
